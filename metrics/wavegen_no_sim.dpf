@@ -1,0 +1,53 @@
+---
+# Note: The contents of this file are automatically generated.
+# Any changes made by hand may be overwritten.
+version: '0.2'
+work_dir: work
+design_root_dir: ..\..\..\..\
+simulations: []
+source_files:
+  - path: ..\common\xpm_filelist.txt
+    language: vhdl
+    library_name: xpm
+    file_list: relative-to-file
+  - path: ..\common\unisim_filelist.txt
+    language: vhdl
+    library_name: unisim
+    file_list: relative-to-file
+  - path: ..\common\xpm_ver_filelist.txt
+    language: verilog
+    library_name: xpm
+    file_list: relative-to-file
+  - path: ..\common\unisims_ver_filelist.txt
+    language: verilog
+    library_name: unisims_ver
+    file_list: relative-to-file
+  - path: >-
+      ..\..\..\..\..\wavegen.ip_user_files\ipstatic\simulation\fifo_generator_vlog_beh.v
+    language: verilog
+    library_name: fifo_generator_v13_2_7
+    options: >-
+      +incdir+../../../../../wavegen.srcs/sources_1/imports/Sources
+      +incdir+../../../../../wavegen.gen/sources_1/ip/clk_core
+  - path: >-
+      ..\..\..\..\..\wavegen.ip_user_files\ipstatic\hdl\fifo_generator_v13_2_rfs.vhd
+    language: vhdl
+    library_name: fifo_generator_v13_2_7
+  - path: ..\..\..\..\..\wavegen.ip_user_files\ipstatic\hdl\fifo_generator_v13_2_rfs.v
+    language: verilog
+    library_name: fifo_generator_v13_2_7
+    options: >-
+      +incdir+../../../../../wavegen.srcs/sources_1/imports/Sources
+      +incdir+../../../../../wavegen.gen/sources_1/ip/clk_core
+  - path: ..\common\xil_defaultlib_filelist.txt
+    language: verilog
+    library_name: xil_defaultlib
+    options: >-
+      +incdir+../../../../../wavegen.srcs/sources_1/imports/Sources
+      +incdir+../../../../../wavegen.gen/sources_1/ip/clk_core
+    file_list: relative-to-file
+  - path: ..\..\xsim\glbl.v
+    language: verilog
+    library_name: xil_defaultlib
+library_search_paths:
+  - $STD_LIBS\ieee93
